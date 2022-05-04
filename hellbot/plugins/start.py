@@ -11,7 +11,7 @@ from ..helper.miscs import clog, get_file_id
 
 
 GROUPS = get_collections("GROUPS")
-BOT_PIC = "https://te.legra.ph/file/2a24a198476d4abf505da.jpg"
+BOT_PIC = "https://telegra.ph/file/fd664f6319e6ba4a2cc3b.jpg"
 START_TIME = datetime.datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
 TIME_DURATION_UNITS = (
