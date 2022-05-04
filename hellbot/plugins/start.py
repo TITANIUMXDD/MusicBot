@@ -34,11 +34,11 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(command("startop") & filters.private & ~filters.edited)
+@Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=BOT_PIC,
-        caption=f"<b><i>Hello there!! \nI'm a Telegram voice chat music player by @Its_Hellbot. Enjoy my advanced features along with a simple and sexy interface</b></i>",
+        caption=f"<b><i>Hello there!! \nI'm a Telegram voice chat music player by @Titanium_Xyz. Enjoy my advanced features along with a simple and sexy interface</b></i>",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -53,15 +53,15 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "Channel 🍀", url=f"https://t.me/its_hellbot"
+                        "Channel 🍀", url=f"https://t.me/Titanium_Xyz"
                     ),
                     InlineKeyboardButton(
-                        "Source Code", url="https://github.com/The-HellBot/Music"
+                        "Source Code", url="https://github.com/TITANIUMXD/Music"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "Deployed By", url=f"tg://openmessage?user_id={OWNER}"
+                        "Owned By", url=f"tg://openmessage?user_id={OWNER}"
                     )
                 ]
            ]
